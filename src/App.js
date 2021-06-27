@@ -1,22 +1,17 @@
-import logo from './logo.svg';
+import logo from './cage.png';
 import './App.css';
 
 function App() {
+  function createPost(){
+ console.log("Create post clicked")
+  }
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       <img src={logo} className="App-logo" alt="logo" />
+      <button onClick={() => createPost()}>
+        "I'd Like to take his face.....off"
+      </button>
       </header>
     </div>
   );
